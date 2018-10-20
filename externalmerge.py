@@ -31,7 +31,7 @@ def cmp (ta, tb):
 def merge(listaBlocos):
 
     for item in listaBlocos:
-        while listaBlocos > 1:
+        while len(listaBlocos) > 1:
             a = item
             b = item + 1
             arq1 = open("arq1.txt", "w")
@@ -74,7 +74,7 @@ def merge(listaBlocos):
             resultado.close()
             del(listaBlocos[1])
             del(listaBlocos[0])
-            
+
     return listaBlocos[0]
 
 contMove = 0 #a variável que irá iterar no arquivo
